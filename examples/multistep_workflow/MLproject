@@ -3,6 +3,8 @@ name: multistep_example
 conda_env: conda.yaml
 
 entry_points:
+  parameters:
+      ratings_csv: path
   load_raw_data:
     command: "python load_raw_data.py"
 

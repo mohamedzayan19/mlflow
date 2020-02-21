@@ -4,6 +4,8 @@ conda_env: conda.yaml
 
 entry_points:
   load_raw_data:
+    parameters:
+      ratings_csv: path
     command: "python load_raw_data.py"
 
   etl_data:
